@@ -1,0 +1,22 @@
+{
+  "name": "peewa",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "ajax": "^0.0.4",
+    "axios": "^1.9.0",
+    "discord-rpc": "^4.0.1",
+    "discord.js": "^14.19.3",
+    "dotenv": "^16.5.0",
+    "fast-csv": "^5.0.2",
+    "jquery": "^3.7.1",
+    "nodemon": "^3.1.10",
+    "pm2": "^6.0.6"
+  }
+}
