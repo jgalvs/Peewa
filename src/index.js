@@ -140,8 +140,9 @@ DiscordRPC.register(ID);
 
 async function activity(){
     if(!RPC) return;
-
+    console.log("RPC Ready - ["+formattedDate+"]")
     RPC.setActivity({
+        type: ActivityType.Playing,
         details: 'Audition Next Gen',
         state: 'AFK',
         largeImageKey: 'peewa',
@@ -151,19 +152,20 @@ async function activity(){
     })
 }
 
-RPC.on('ready', async () =>{
-    console.log("RPC Ready - ["+formattedDate+"]")
-    activity();
+// RPC.on('ready', async () =>{
+//     console.log("RPC Ready - ["+formattedDate+"]")
+//     activity();
 
-    setInterval(() => {
-        activity();
-    }, 10000000)
-})
+//     setInterval(() => {
+//         activity();
+//     }, 10000000)
+// })
 
-//Set status activity
+//Start
 client.on('ready', (c) =>{
     console.log("["+formattedDate+"]");
     console.log("Server Running")
+    // Set bot status
     client.user.setActivity({
         name: 'Audition Next Gen',
         type: ActivityType.Playing,
@@ -171,6 +173,9 @@ client.on('ready', (c) =>{
         state: 'AFK',
         large_image: 'audinxgen',
     })
+
+    //Set user status activity
+    activity();
 })
 
 client.login(process.env.DISCORD_TOKEN)
