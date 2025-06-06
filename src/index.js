@@ -16,8 +16,8 @@ import {
 
 import functions, { songfbSelector, songSelector } from './functions.js';
 
-const now = new Date();
-const formattedDate = now.toLocaleString();
+let now = new Date();
+let formattedDate = now.toLocaleString();
 
 const client = new Client({
     intents: [
@@ -32,7 +32,8 @@ const client = new Client({
 client.on(Events.InteractionCreate, async interaction => {
 
     if (!interaction.isChatInputCommand()) return;
-    
+    now = new Date();
+    formattedDate = now.toLocaleString();
     //Log actions
     console.log("["+formattedDate+"]");
     console.log("- Guild: "+interaction.guild.name+" User "+interaction.user.username+" used /"+interaction.commandName);
@@ -108,11 +109,6 @@ client.on(Events.InteractionCreate, async interaction => {
 
     if(interaction.commandName === 'nugagawen'){
         await interaction.deferReply();
-        // const embed = new EmbedBuilder();
-        // embed.setTitle("Ang gagawin ay mag..");
-        // embed.setDescription("Ako na muna mag isip leche.")
-        // embed.setColor("#00b0f4");
-        // interaction.editReply({ embeds: [embed] });
         try{
             setTimeout(() => {
                 interaction.editReply({ embeds: [functions.gameSelector()]});
@@ -143,7 +139,7 @@ async function activity(){
     console.log("RPC Ready - ["+formattedDate+"]")
     RPC.setActivity({
         type: ActivityType.Playing,
-        details: 'Audition Next Gen',
+        details: 'Visual Studio Code',
         state: 'AFK',
         largeImageKey: 'peewa',
         largeImageText: 'Peewa',
@@ -151,15 +147,6 @@ async function activity(){
         smallImageText: 'yay',
     })
 }
-
-// RPC.on('ready', async () =>{
-//     console.log("RPC Ready - ["+formattedDate+"]")
-//     activity();
-
-//     setInterval(() => {
-//         activity();
-//     }, 10000000)
-// })
 
 //Start
 client.on('ready', (c) =>{
