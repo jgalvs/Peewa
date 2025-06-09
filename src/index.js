@@ -14,7 +14,7 @@ import {
     EmbedBuilder
  } from 'discord.js';
 
-import functions, { songfbSelector, songSelector } from './functions.js';
+import functions from './functions.js';
 
 let now = new Date();
 let formattedDate = now.toLocaleString();
@@ -133,7 +133,6 @@ const DiscordRPC = drpc;
 const RPC = new DiscordRPC.Client({transport: 'ipc'});
 const ID = "1377708148332429365";
 DiscordRPC.register(ID);
-
 async function activity(){
     if(!RPC) return;
     console.log("RPC Ready - ["+formattedDate+"]")
@@ -143,8 +142,14 @@ async function activity(){
         state: 'AFK',
         largeImageKey: 'peewa',
         largeImageText: 'Peewa',
-        smallImageKey: 'yay',
-        smallImageText: 'yay',
+        smallImageKey: 'vsc',
+        smallImageText: 'Visual Studio Code',
+        buttons: [
+            {
+                label: 'Add me on Discord',
+                url: 'https://discordapp.com/users/382922598868058112'
+            }
+        ]
     })
 }
 

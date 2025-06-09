@@ -21,11 +21,11 @@ const commands = [
     },
     {
         name: 'song',
-        description: 'Ako na mamili'
+        description: 'Ako na mamili.'
     },
     {
         name: 'songfb',
-        description: 'Ako na mamili',
+        description: 'Ako na mamili with rules.',
         options: [
             {
                 name: 'min',

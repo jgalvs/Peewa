@@ -7,7 +7,7 @@ const {
 } = require('discord.js');
 const song_list = require('./songs/songlist.json');
 
-
+//Mood Selector
 const moodSelector = () => {
     const mood = [
         'Uh-huh', 'Legit?', 'I see you.', 'nc1'
@@ -17,6 +17,7 @@ const moodSelector = () => {
     return mood[num2];
 }
 
+//Song Selector
 const songSelector = () => {
     const songs = song_list;
     // console.log(songs);
@@ -45,6 +46,7 @@ const songSelector = () => {
     return embed;
 }
 
+//Song Selector with rules
 const songfbSelector = (min,max,artist) => {
     const songs = song_list;
     let selected;
@@ -141,7 +143,12 @@ const songfbSelector = (min,max,artist) => {
     return embed;
 }
 
+//Read CSV file and return embed with round count
 const readCSVData = async (user_ign,user_id) => new Promise((resolve, reject) => {
+    const title = "Audition Next Gen - JUNE 2025 DDC COUNT"
+    const anl_weblink = "https://docs.google.com/spreadsheets/d/1sPS8rwMzZs_efDG9dxJHeXPmgsyQy9sydpRq32iiPsQ/edit?gid=0#gid=0"
+    const updateDate = "Round count updated as of 06/09/2025"
+    const footer = "NOTE:\nThis is an unofficial bot from Audition Next Gen PH Community. \nFor official updates, please visit the official Audition Next Gen PH Facebook page."
     let data2 = [];
     let isFound = true;
     fs.createReadStream('./src/rounds/rounds.csv')
@@ -166,8 +173,8 @@ const readCSVData = async (user_ign,user_id) => new Promise((resolve, reject) =>
                 embed.setColor(0xff0000)
                 embed.setDescription('User '+user_ign+' was not found on the list. Please try again.')
             } else {
-                embed.setTitle("Audition Next Gen Round Count - May 2025")
-                embed.setURL(process.env.anl_weblink)
+                embed.setTitle(title)
+                embed.setURL(anl_weblink)
                 embed.setDescription("<@"+user_id+">\nRound count result")
                 embed.addFields(
                     {
@@ -182,13 +189,13 @@ const readCSVData = async (user_ign,user_id) => new Promise((resolve, reject) =>
                     },
                     {
                     name: "",
-                    value: process.env.updateDate,
+                    value: updateDate,
                     inline: false
                     },
                 )
                 embed.setColor("#00b0f4")
                 embed.setFooter({
-                    text: "NOTE:\nThis is an unofficial bot from Audition Next Gen"
+                    text: footer
                 });
                 
             }
@@ -200,6 +207,7 @@ const readCSVData = async (user_ign,user_id) => new Promise((resolve, reject) =>
         });
 })
 
+//Game Selector
 const gameSelector = () => {
     const game = [
         'Valo', 'Norms', 'R.E.P.O.', 'FB', 'Movie Marathon'
@@ -213,7 +221,6 @@ const gameSelector = () => {
     return embed;  
     
 }
-
 
 module.exports = {
     songSelector: songSelector,
