@@ -6,6 +6,7 @@ const {
     MessageEmbed
 } = require('discord.js');
 const song_list = require('./songs/songlist.json');
+const roundCount_details = require('./rounds/details.json');
 
 //Mood Selector
 const moodSelector = () => {
@@ -112,11 +113,11 @@ const songfbSelector = (min,max,artist) => {
     if(noArtist==true){
         embed.setTitle('Uh-huh..')
         embed.setColor(0xff0000)
-        embed.setDescription('Artist not found on the list. Please try again.')
+        embed.setDescription(`I couldn't find that artist on the list. Please try again.`)
     }else if(bpmRange==true){
         embed.setTitle('Uh-huh..')
         embed.setColor(0xff0000)
-        embed.setDescription('Please set correct BPM Range (73-220). Please try again.')
+        embed.setDescription('Invalid BPM range. Please enter a value between 73 and 220.')
     }
     else{
         embed.setTitle('Song Selected')
@@ -145,10 +146,10 @@ const songfbSelector = (min,max,artist) => {
 
 //Read CSV file and return embed with round count
 const readCSVData = async (user_ign,user_id) => new Promise((resolve, reject) => {
-    const title = "Audition Next Gen - JUNE 2025 DDC COUNT"
-    const anl_weblink = "https://docs.google.com/spreadsheets/d/1sPS8rwMzZs_efDG9dxJHeXPmgsyQy9sydpRq32iiPsQ/edit?gid=0#gid=0"
-    const updateDate = "Round count updated as of 06/09/2025"
-    const footer = "NOTE:\nThis is an unofficial bot from Audition Next Gen PH Community. \nFor official updates, please visit the official Audition Next Gen PH Facebook page."
+    const title = roundCount_details.title
+    const anl_weblink = roundCount_details.anl_weblink
+    const updateDate = roundCount_details.updateDate
+    const footer = roundCount_details.footer
     let data2 = [];
     let isFound = true;
     fs.createReadStream('./src/rounds/rounds.csv')

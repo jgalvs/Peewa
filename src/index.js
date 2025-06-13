@@ -87,7 +87,11 @@ client.on(Events.InteractionCreate, async interaction => {
             }
             if(min>max){
                 // interaction.editReply("Max should be higher than the minimum value")
-                interaction.editReply("Please input the correct value.")
+                const embed = new EmbedBuilder()
+                embed.setTitle('Uh-huh..')
+                embed.setColor(0xff0000)
+                embed.setDescription('Max BPM should be higher than the minimum value.\n')
+                interaction.editReply({ embeds: [embed] });
             }else{
                 interaction.editReply({ embeds: [functions.songfbSelector(min, max, artist)]});
             }
