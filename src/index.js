@@ -132,30 +132,30 @@ client.on(Events.ShardError, error => {
 });
 
 //Rich Presence
-import drpc from 'discord-rpc'
-const DiscordRPC = drpc;
-const RPC = new DiscordRPC.Client({transport: 'ipc'});
-const ID = "1377708148332429365";
-DiscordRPC.register(ID);
-async function activity(){
-    if(!RPC) return;
-    console.log("RPC Ready - ["+formattedDate+"]")
-    RPC.setActivity({
-        type: ActivityType.Playing,
-        details: 'Visual Studio Code',
-        state: 'AFK',
-        largeImageKey: 'peewa',
-        largeImageText: 'Peewa',
-        smallImageKey: 'vsc',
-        smallImageText: 'Visual Studio Code',
-        buttons: [
-            {
-                label: 'Add me on Discord',
-                url: 'https://discordapp.com/users/382922598868058112'
-            }
-        ]
-    })
-}
+// import drpc from 'discord-rpc'
+// const DiscordRPC = drpc;
+// const RPC = new DiscordRPC.Client({transport: 'ipc'});
+// const ID = "1377708148332429365";
+// DiscordRPC.register(ID);
+// async function activity(){
+//     if(!RPC) return;
+//     console.log("RPC Ready - ["+formattedDate+"]")
+//     RPC.setActivity({
+//         type: ActivityType.Playing,
+//         details: 'Visual Studio Code',
+//         state: 'AFK',
+//         largeImageKey: 'peewa',
+//         largeImageText: 'Peewa',
+//         smallImageKey: 'vsc',
+//         smallImageText: 'Visual Studio Code',
+//         buttons: [
+//             {
+//                 label: 'Add me on Discord',
+//                 url: 'https://discordapp.com/users/382922598868058112'
+//             }
+//         ]
+//     })
+// }
 
 //Start
 client.on('ready', (c) =>{
