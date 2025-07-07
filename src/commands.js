@@ -47,18 +47,18 @@ const commands = [
             }
         ],
     },
-    {
-        name: 'hulyo',
-        description: 'Your Majesty'
-    },
-    {
-        name: 'jesse',
-        description: 'Queen'
-    },
-    {
-        name: 'jaryjary',
-        description: 'jayr'
-    },
+    // {
+    //     name: 'hulyo',
+    //     description: 'Your Majesty'
+    // },
+    // {
+    //     name: 'jesse',
+    //     description: 'Queen'
+    // },
+    // {
+    //     name: 'jaryjary',
+    //     description: 'jayr'
+    // },
     {
         name: 'mood',
         description: 'Word of the day'

@@ -54,17 +54,17 @@ client.on(Events.InteractionCreate, async interaction => {
         
     }
 
-    if(interaction.commandName === 'hulyo'){
-        interaction.reply("Uh huh, I see you.")
-    }
+    // if(interaction.commandName === 'hulyo'){
+    //     interaction.reply("Uh huh, I see you.")
+    // }
 
-    if(interaction.commandName === 'jaryjary'){
-        interaction.reply("ge.")
-    }
+    // if(interaction.commandName === 'jaryjary'){
+    //     interaction.reply("ge.")
+    // }
 
-    if(interaction.commandName === 'jesse'){
-        interaction.reply("Babygirl")
-    }
+    // if(interaction.commandName === 'jesse'){
+    //     interaction.reply("Babygirl")
+    // }
 
     if(interaction.commandName === 'song'){
         await interaction.deferReply();

@@ -211,7 +211,7 @@ const readCSVData = async (user_ign,user_id) => new Promise((resolve, reject) =>
 //Game Selector
 const gameSelector = () => {
     const game = [
-        'Valo', 'Norms', 'R.E.P.O.', 'FB', 'Movie Marathon'
+        'Valorant', 'Audi - Norms', 'R.E.P.O.', 'Audi - FB', 'Movie Marathon', 'PEAK', 'DOTA'
     ]
     const num = game.length;
     const num2 = Math.floor(Math.random() * num)
