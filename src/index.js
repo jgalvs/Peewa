@@ -132,11 +132,11 @@ client.on(Events.ShardError, error => {
 });
 
 //Rich Presence
-// import drpc from 'discord-rpc'
-// const DiscordRPC = drpc;
-// const RPC = new DiscordRPC.Client({transport: 'ipc'});
-// const ID = "1377708148332429365";
-// DiscordRPC.register(ID);
+import drpc from 'discord-rpc'
+const DiscordRPC = drpc;
+const RPC = new DiscordRPC.Client({transport: 'ipc'});
+const ID = "1377708148332429365";
+DiscordRPC.register(ID);
 // async function activity(){
 //     if(!RPC) return;
 //     console.log("RPC Ready - ["+formattedDate+"]")
