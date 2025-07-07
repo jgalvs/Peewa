@@ -171,8 +171,8 @@ client.on('ready', (c) =>{
     })
 
     //Set user status activity
-    activity();
+    // activity();
 })
 
 client.login(process.env.DISCORD_TOKEN)
-RPC.login({ clientId: ID})
+// RPC.login({ clientId: ID})
