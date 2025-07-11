@@ -8053,77 +8053,77 @@
  },
  {
    "BPM": 115,
-   "Title": "Residuals",
-   "Singer": "Chris Brown"
+   "TITLE": "Residuals",
+   "ARTIST": "Chris Brown"
  },
  {
    "BPM": 115,
-   "Title": "Perfect Crime",
-   "Singer": "Fifty Fifty"
+   "TITLE": "Perfect Crime",
+   "ARTIST": "Fifty Fifty"
  },
  {
    "BPM": 115,
-   "Title": "NEON",
-   "Singer": "YUKIKA"
+   "TITLE": "NEON",
+   "ARTIST": "YUKIKA"
  },
  {
    "BPM": 120,
-   "Title": "Miniskirt",
-   "Singer": "AOA"
+   "TITLE": "Miniskirt",
+   "ARTIST": "AOA"
  },
  {
    "BPM": 120,
-   "Title": "Dark Paradise",
-   "Singer": "Lana Del Rey"
+   "TITLE": "Dark Paradise",
+   "ARTIST": "Lana Del Rey"
  },
  {
    "BPM": 123,
-   "Title": "Ba Fang Lai Cai (Wealth From All Directions)",
-   "Singer": "Lanlao SKAI IS YOURGOD"
+   "TITLE": "Ba Fang Lai Cai (Wealth From All Directions)",
+   "ARTIST": "Lanlao SKAI IS YOURGOD"
  },
  {
    "BPM": 123,
-   "Title": "Manchild",
-   "Singer": "Sabrina Carpenter"
+   "TITLE": "Manchild",
+   "ARTIST": "Sabrina Carpenter"
  },
  {
    "BPM": 127,
-   "Title": "NIRVANA",
-   "Singer": "Katy Perry"
+   "TITLE": "NIRVANA",
+   "ARTIST": "Katy Perry"
  },
  {
    "BPM": 128,
-   "Title": "MAD",
-   "Singer": "Martin Garrix & Lauv"
+   "TITLE": "MAD",
+   "ARTIST": "Martin Garrix & Lauv"
  },
  {
    "BPM": 130,
-   "Title": "Girls Will Be Girls",
-   "Singer": "ITZY"
+   "TITLE": "Girls Will Be Girls",
+   "ARTIST": "ITZY"
  },
  {
    "BPM": 148,
-   "Title": "FE!N (feat. Playboi Carti)",
-   "Singer": "Travis Scott"
+   "TITLE": "FE!N (feat. Playboi Carti)",
+   "ARTIST": "Travis Scott"
  },
  {
    "BPM": 148,
-   "Title": "Ai He (Love River) (DJ ver.)",
-   "Singer": "Jiang Xue Er"
+   "TITLE": "Ai He (Love River) (DJ ver.)",
+   "ARTIST": "Jiang Xue Er"
  },
  {
    "BPM": 150,
-   "Title": "Hyakka Ryouran",
-   "Singer": "Lilas Ikuta"
+   "TITLE": "Hyakka Ryouran",
+   "ARTIST": "Lilas Ikuta"
  },
  {
    "BPM": 160,
-   "Title": "Zuo Wei",
-   "Singer": "Yu Dong Ran"
+   "TITLE": "Zuo Wei",
+   "ARTIST": "Yu Dong Ran"
  },
  {
    "BPM": 170,
-   "Title": "Pyramid (feat. Iyaz)",
-   "Singer": "Charice"
+   "TITLE": "Pyramid (feat. Iyaz)",
+   "ARTIST": "Charice"
  }
 ]
