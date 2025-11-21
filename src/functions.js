@@ -11,7 +11,7 @@ const roundCount_details = require('./rounds/details.json');
 //Mood Selector
 const moodSelector = () => {
     const mood = [
-        'Uh-huh', 'Legit?', 'I see you.', 'nc1'
+        'Uh-huh', 'Legit?', 'I see you.', 'nc1', 'gaw'
     ]
     const num = mood.length;
     const num2 = Math.floor(Math.random() * num)
