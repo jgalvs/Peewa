@@ -6,6 +6,7 @@ const {
     MessageEmbed
 } = require('discord.js');
 const song_list = require('./songs/songlist.json');
+const tsong_list = require('./songs/tourna.json');
 const roundCount_details = require('./rounds/details.json');
 
 //Mood Selector
@@ -21,6 +22,35 @@ const moodSelector = () => {
 //Song Selector
 const songSelector = () => {
     const songs = song_list;
+    // console.log(songs);
+    const num = songs.length;
+    const num2 = Math.floor(Math.random() * num)
+    const embed = new EmbedBuilder();
+    embed.setColor("#00b0f4");
+    embed.setTitle('Song Selected')
+    embed.addFields(
+        {
+            name: "BPM: ",
+            value: songs[num2].BPM +" BPM",
+            inline: true
+        },
+        {
+            name: "Artist: ",
+            value: songs[num2].ARTIST,
+            inline: true
+        },
+        {
+            name: "Title: ",
+            value: songs[num2].TITLE,
+            inline: false
+        }
+    )
+    return embed;
+}
+
+//Tourna Song Selector
+const tsongSelector = () => {
+    const songs = tsong_list;
     // console.log(songs);
     const num = songs.length;
     const num2 = Math.floor(Math.random() * num)
@@ -225,6 +255,7 @@ const gameSelector = () => {
 
 module.exports = {
     songSelector: songSelector,
+    tsongSelector: tsongSelector,
     songfbSelector: songfbSelector,
     readCSVData: readCSVData,
     moodSelector: moodSelector,

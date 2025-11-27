@@ -76,6 +76,16 @@ client.on(Events.InteractionCreate, async interaction => {
         }
     }
 
+    if(interaction.commandName === 'tourna'){
+        await interaction.deferReply();
+        try{
+            interaction.editReply({ embeds: [functions.tsongSelector()]});
+        }catch(e){
+            console.log(e)
+            interaction.editReply("An error occurred. Please try again later.\n");
+        }
+    }
+
     if(interaction.commandName === 'songfb'){
         let artist;
         await interaction.deferReply();

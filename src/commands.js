@@ -24,6 +24,10 @@ const commands = [
         description: 'Ako na mamili.'
     },
     {
+        name: 'tourna',
+        description: 'Ako na mamili.'
+    },
+    {
         name: 'songfb',
         description: 'Ako na mamili with rules.',
         options: [
