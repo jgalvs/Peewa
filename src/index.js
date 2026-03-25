@@ -36,7 +36,11 @@ client.on(Events.InteractionCreate, async interaction => {
     formattedDate = now.toLocaleString();
     //Log actions
     console.log("["+formattedDate+"]");
-    console.log("- Guild: "+interaction.guild.name+" User "+interaction.user.username+" used /"+interaction.commandName);
+    if(interaction.guild != null){
+        console.log("- Guild: "+interaction.guild.name+" User "+interaction.user.username+" used /"+interaction.commandName);
+    }else{
+        console.log("- User "+interaction.user.username+" used /"+interaction.commandName);
+    }
     
     if(interaction.commandName === 'rounds'){
         await interaction.deferReply();

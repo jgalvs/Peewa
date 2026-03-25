@@ -12,7 +12,7 @@ const roundCount_details = require('./rounds/details.json');
 //Mood Selector
 const moodSelector = () => {
     const mood = [
-        'Uh-huh', 'Legit?', 'I see you.', 'nc1', 'gaw'
+        'Uh-huh', 'Legit?', 'I see you.', 'nc1', 'arf arf'
     ]
     const num = mood.length;
     const num2 = Math.floor(Math.random() * num)
@@ -241,7 +241,7 @@ const readCSVData = async (user_ign,user_id) => new Promise((resolve, reject) =>
 //Game Selector
 const gameSelector = () => {
     const game = [
-        'Valorant', 'Audi - Norms', 'R.E.P.O.', 'Audi - FB', 'Movie Marathon', 'PEAK', 'DOTA'
+        'Valorant', 'Audi - Norms', 'R.E.P.O.', 'Audi - FB', 'Movie Marathon', 'PEAK', 'DOTA', 'YAPYAP'
     ]
     const num = game.length;
     const num2 = Math.floor(Math.random() * num)

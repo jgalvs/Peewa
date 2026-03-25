@@ -69,7 +69,7 @@ const commands = [
     },
     {
         name: 'nugagawen',
-        description: 'Ako na mag decide leche'
+        description: 'Ako na mag decide.'
     }
 ];
 
