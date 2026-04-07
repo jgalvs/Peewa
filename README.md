@@ -1,6 +1,6 @@
 # Peewa
 
-**Peewa** is a custom Discord bot designed to provide fun and utility commands for your server specialized for Audition Next Gen games. 
+**Peewa** is a custom Discord bot designed to provide fun and utility commands for your server specialized for **Audition Next Gen** Game. 
 It is built with **Node.js** and uses **discord.js** for connectivity with Discord’s API.
 
 ## 🚀 Features
