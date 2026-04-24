@@ -27,3 +27,9 @@ Before running the bot, make sure you have:
 git clone https://github.com/jgalvs/Peewa.git
 cd Peewa
 npm install
+
+## ⚙️ Version
+
+```bash
+Patch : 280
+Updated as of : 04/26/2026
