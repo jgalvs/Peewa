@@ -43,6 +43,11 @@ const songSelector = () => {
             name: "Title: ",
             value: songs[num2].TITLE,
             inline: false
+        },
+        {
+            name: "",
+            value: roundCount_details.SongupdateDate,
+            inline: false
         }
     )
     return embed;
@@ -167,6 +172,11 @@ const songfbSelector = (min,max,artist) => {
             name: "Title: ",
             value: selected.TITLE,
             inline: false
+            },
+            {
+                name: "",
+                value: roundCount_details.SongupdateDate,
+                inline: false
             }
         )
         embed.setColor("#00b0f4")
